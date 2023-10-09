@@ -17,11 +17,11 @@ public class Main {
     public static void main(String[] args) {
         Square square = new Square(3.0);
 
-        System.out.println("Area is: " + square.area());
-        System.out.println("Perimeter is: " + square.perimeter());
+        System.out.println("Area s is: " + square.area());
+        System.out.println("Perimeter s is: " + square.perimeter());
 
         Circle circle = new Circle(4.0);
-        System.out.println("Area is: " + circle.area());
-        System.out.println("Perimeter is: " + circle.perimeter());
+        System.out.println("Area c is: " + circle.area());
+        System.out.println("Perimeter c is: " + circle.perimeter());
     }
 }
