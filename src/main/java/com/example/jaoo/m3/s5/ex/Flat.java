@@ -10,13 +10,20 @@ import java.util.logging.Logger;
 /**
  * TODO: Flat is-a Conditioning
  */
-public class Flat {
-    private static final Logger log = Logger.getGlobal();
+public class Flat implements Conditioning{
+	private static final Logger log = Logger.getGlobal();
 
-    /**
-     * No-arg constructor
-     */
-    public Flat() {
-        log.info("Flat created");
-    }
+	/**
+	 * No-arg constructor
+	 */
+	public Flat() {
+		log.info("Flat created");
+	}
+
+	
+
+	public String temp(int temp) {
+		// TODO Auto-generated method stub
+		return "La temperatura dell'appartamento ora è a " + temp + " gradi.";
+	};
 }

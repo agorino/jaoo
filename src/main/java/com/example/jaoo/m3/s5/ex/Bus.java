@@ -10,13 +10,27 @@ import java.util.logging.Logger;
 /**
  * TODO: Bus is-a Vehicle and Conditioning
  */
-public class Bus {
-    private static final Logger log = Logger.getGlobal();
+public class Bus extends Vehicle implements Conditioning {
+	private static final Logger log = Logger.getGlobal();
 
-    /**
-     * No-arg constructor
-     */
-    public Bus() {
-        log.info("Bus created");
-    }
+	/**
+	 * No-arg constructor
+	 */
+	public Bus() {
+		log.info("Bus created");
+	}
+
+	public void turn_left() {
+
+	}
+
+	public void turn_right() {
+	}
+
+	public void brake() {
+	}
+
+	public String temp(int temp) {
+		return "La temperatura del bus ora è a " + temp + " gradi.";
+	};
 }
